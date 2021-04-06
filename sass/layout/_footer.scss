@@ -1,0 +1,19 @@
+.footer-info {
+    padding: 2rem 1rem;
+
+    &__copyright p {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        color: $color-gray-dark;
+    }
+
+    &__copyright a{
+        text-decoration: none;
+        color: $color-black;
+        transition: .3s;
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}
