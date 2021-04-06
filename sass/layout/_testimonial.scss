@@ -1,0 +1,61 @@
+.testimonial-image {
+    height: 70vh;
+    background-image: url(../img/testimonial-image.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonial-info {
+    background: $color-black;
+    height: 70vh;
+    padding: 7rem 3rem 1rem 6rem;
+
+    &__text {
+        color: $color-white;
+        font-style: italic;
+        font-size: 2.4rem;
+        font-weight: 300;
+        margin-top: 2rem;
+    }
+
+    &__person-image {
+        margin-top: 2rem;
+        @include clearfix;
+        position: relative;
+    }
+
+    &__person-image img {
+        border-radius: 50%;
+        width: 8rem;
+        height: 8rem;
+        border: .4rem solid $color-white;
+        float: left;
+    }
+
+    &__person-image figcaption {
+        color: $color-white;
+        font-size: 2rem;
+        font-weight: 300;
+        float: left;
+        position: absolute;
+        top: 50%;
+        left: 10rem;
+        transform: translate(0, -50%);
+    }
+
+    &__nav-dots {
+        margin-top: 5rem;
+        text-align: center;
+
+    }
+
+    &__dot {
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        background-color: $color-gray-light;
+        border-radius: 50%;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+}

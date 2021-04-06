@@ -1,0 +1,72 @@
+.contact-form {
+    padding: 2rem 1rem;
+
+    & input {
+        font-family: "Lato", sans-serif;
+    }
+    
+    &__type input {
+        width: 100%;
+        height: 5rem;
+        border-style: none;
+        border-bottom: 0.3rem solid $color-gray-light;
+        transition: .7s;
+        padding: 0 0 0 1rem;
+        font-size: 1.8rem;
+        
+        &:active,
+        &:focus {
+            outline: none;
+            border-bottom: 0.3rem solid $color-black;
+        }
+
+        &::placeholder {
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+    }
+    
+    &__submit input {
+        padding: 0;
+        width: 100%;
+        height: 5rem;
+        color: $color-white;
+        border-radius: 50px;
+        background-color: $color-black;
+        font-size: 1.6rem;
+        border-style: none;
+        font-weight: 300;
+        transition: all .5s;
+        cursor: pointer;
+
+        &:active,
+        &:focus {
+            outline: none;
+        }
+        
+        &:hover {
+            background-color: $color-secondary;
+        } 
+    }
+
+    & textarea {
+        width: 100%;
+        border-style: none;
+        border-bottom: 0.3rem solid $color-gray-light;
+        transition: all .5s;
+        padding: 0 0 0 1rem;
+        font-family: "Lato", sans-serif;
+        font-size: 1.8rem;
+
+        &:active,
+        &:focus {
+            outline: none;
+            border-bottom: 0.3rem solid $color-black;
+        }
+
+        &::placeholder {
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+    }
+}
