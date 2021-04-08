@@ -3,12 +3,20 @@
         background-image: url(../img/slider_1.jpg);
     }  
 
-    33% {
+    20% {
         background-image: url(../img/slider_2.jpg)
     } 
 
-    66% {
+    40% {
         background-image: url(../img/slider_3.jpg)
+    } 
+
+    60% {
+        background-image: url(../img/slider_4.jpg)
+    } 
+
+    80% {
+        background-image: url(../img/slider_5.jpg)
     } 
 }
 
@@ -23,7 +31,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    animation: slideBackground 20s ease-in-out infinite;
+    animation: slideBackground 30s ease-in-out infinite;
     position: relative;
     z-index: 1;
 
