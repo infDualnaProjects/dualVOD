@@ -353,10 +353,22 @@ body {
   right: 20rem;
 }
 
+@media (max-width: 1023px) {
+  .navigation__logging-button {
+    display: none;
+  }
+}
+
 .navigation__signin-button {
   position: absolute;
   top: 1.3rem;
   right: 4rem;
+}
+
+@media (max-width: 1023px) {
+  .navigation__signin-button {
+    display: none;
+  }
 }
 
 .navigation__hamburger {

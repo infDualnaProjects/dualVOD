@@ -71,12 +71,20 @@
         position: absolute;
         top: 1.3rem;
         right: 20rem;
+
+        @include respond(mobile) {
+            display: none;
+        }
     }
 
     &__signin-button {
         position: absolute;
         top: 1.3rem;
         right: 4rem;
+
+        @include respond(mobile) {
+            display: none;
+        }
     }
 
     &__hamburger {
