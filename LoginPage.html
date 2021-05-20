@@ -16,7 +16,7 @@
 
 <div id="login-card" class="card">
     <div class="card-body">
-        <h2 class="text-center">Logowanie</h2>
+        <h2 class="text-center">Logowanie dualVOD</h2>
         <br>
         <form action="">
             <div class="form-group">
@@ -25,11 +25,11 @@
             <div class="form-group">
                 <input type="password" class="form-control" id="email" placeholder="Podaj hasło" name="password">
             </div>
-            <button onclick="login()" class="btn btn-primary deep-purple btn-block">Zaloguj
+            <button class="btn btn-primary deep-purple btn-block">Zaloguj
             </button>
             <button onclick="location.href='RegisterPage.html'" class="btn btn-success deep-purple btn-block">Zarejestruj
             </button>
-            <button onclick="location.href='index.html'" class="btn btn-secondary deep-purple btn-block">Powrót
+            <button type="button" onclick="location.href='index.html'" class="btn btn-secondary deep-purple btn-block">Powrót
             </button>
             <br>
             <br>
@@ -41,6 +41,12 @@
             <div id="passwordError">
                 <div class="alert alert-danger" role="alert">
                 Nieprawidłowe hasło
+                </div>
+            </div>
+
+            <div id="emptyRegisterError">
+                <div class="alert alert-danger" role="alert">
+                    E-mail lub hasło jest puste
                 </div>
             </div>
 

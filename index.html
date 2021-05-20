@@ -10,6 +10,7 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/main.css">
     <script src="https://kit.fontawesome.com/2e9bf3b794.js"></script>
+    <link rel="stylesheet" href="css/mainPage.css">
 
     <title>dualVOD | Najlepsze filmy tu i teraz</title>
 </head>
@@ -28,12 +29,22 @@
                 <div class="navigation__hamburger">
                     <a href="#"><i class="fas fa-bars"></i></a>
                 </div>
-                <div class="navigation__logging-button">
+
+                <div class="navigation__logging-button loggedInButtons">
                     <a href="LoginPage.html" class="btn">Zaloguj się</a>
                 </div>
-                <div class="navigation__signin-button">
+                <div class="navigation__signin-button loggedInButtons">
                     <a href="RegisterPage.html" class="btn">Zarejestruj się</a>
                 </div>
+
+                <div class="navigation__username-button loggedInButtons">
+                    <a class="btn"></a>
+                </div>
+
+                <div class="navigation__logout-button loggedInButtons" id="logoutButton">
+                    <a class="btn">Wyloguj się</a>
+                </div>
+
             </div>
         </div>
         <div class="header__text-box">

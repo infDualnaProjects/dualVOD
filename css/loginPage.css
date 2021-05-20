@@ -1,10 +1,10 @@
 
 #body {
     font-family: 'Nunito';
-    background-color:  #5d8fc9;
+    background-color:  #46b48c;
 }
 #login-card{
-    width:350px;
+    width:550px;
     border-radius: 25px;
     margin:150px auto;
 
@@ -57,5 +57,13 @@
 }
 
 #passwordError.showError {
+    display: block;
+}
+
+#emptyRegisterError {
+    display: none;
+}
+
+#emptyRegisterError.showError {
     display: block;
 }

@@ -55,7 +55,35 @@ $(document).ready(function ($) {
     });
     //Fire it when the page first loads:
     alterClass();
+    let mainPage = new MainPage();
+    mainPage.onMainPageLoad();
 });
+
+
+$("#logoutButton").click(function () {
+    console.log("wylogowano")
+    let mainPage = new MainPage();
+    mainPage.logout();
+});
+
+class MainPage {
+
+    onMainPageLoad() {
+        const userLogin = JSON.parse(localStorage.getItem("user")) || null;
+        if(userLogin) {
+            console.log('has login')
+            $(".navigation__username-button").html("<a class=\"btn\">"+ userLogin +"</a>");
+            $(".loggedInButtons").addClass("loggedIn");
+            console.log('test login')
+        }
+    }
+
+    logout() {
+        console.log("logout()")
+        localStorage.setItem("user", null);
+        $(".loggedInButtons").removeClass("loggedIn");
+    }
+}
 
 const headerMenu = document.querySelector('.header__menu');
 const hamburgerBtn = document.querySelector('.navigation__hamburger');
